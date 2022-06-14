@@ -27,7 +27,7 @@ This is a Node.JS project. I am using express as a simple creation of API.
 
 ## API end points
 
-### default URL
+### Default URL
 http://localhost:3000/pokemon
 
 ### Query parameter - limit & page  (default is 10 per page)
