@@ -11,8 +11,8 @@ app.get("/pokemon", function(req,res,next){
     if( limit > 100 ) {
         res.json( { error: "Please provide limit less than 100" } );  
     }
-    
-    Pokemon = Pokemon.slice( (page-1)*limit, limit*page ); // to fetch based on page & limit
+    // to fetch based on page & limit
+    Pokemon = Pokemon.slice( (page-1)*limit, limit*page ); 
     
     if( Pokemon.length ) {
         res.json( { count: Pokemon.length, results : Pokemon } );
@@ -24,7 +24,8 @@ app.get("/pokemon", function(req,res,next){
 app.get("/pokemon/:id", function(req,res,next){
     let Pokemon = require("./pokemon");
     
-    const id = parseInt( req.params.id ); // convering to integrer
+    // convering to int URL protection
+    const id = parseInt( req.params.id ); 
     
     // checking if it is valid id
     if( ! ( Number.isInteger( id ) &&  id > 0 ) ) {
