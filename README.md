@@ -25,7 +25,7 @@ This is a Node.JS project. I am using express as a simple creation of API.
   ```
 5. open http://localhost:3000/pokemon in new tab
 
-## API end points
+## API endpoints
 
 ### Default URL
 http://localhost:3000/pokemon
